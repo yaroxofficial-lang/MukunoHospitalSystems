@@ -1,0 +1,29 @@
+Pharmacist
+package hospital;
+
+public class Pharmacist extends Employee {
+
+    public Pharmacist(String employeeId, String department, int workingHours) {
+        super(employeeId, department, workingHours);
+    }
+
+    @Override
+    public void performDuties() {
+        System.out.println("Responsibility: Dispensing medicines and advising patients on medication.");
+    }
+}
+
+     Labtechnician
+package hospital;
+
+public class LabTechnician extends Employee {
+
+    public LabTechnician(String employeeId, String department, int workingHours) {
+        super(employeeId, department, workingHours);
+    }
+
+    @Override
+    public void performDuties() {
+        System.out.println("Responsibility: Conducting laboratory tests and analyzing samples.");
+    }
+}
