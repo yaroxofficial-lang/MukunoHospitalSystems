@@ -1,0 +1,39 @@
+package hospital;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Create a Doctor object
+        Employee doctor = new Doctor("DOC001", "Surgery", 40);
+
+        // Create a Nurse object
+        Employee nurse = new Nurse("NUR001", "Emergency", 36);
+
+        // Create a Pharmacist object
+        Employee pharmacist = new Pharmacist("PHA001", "Pharmacy", 40);
+
+        // Create a Laboratory Technician object
+        Employee technician = new LabTechnician("LAB001", "Laboratory", 38);
+
+        // Store all employees in an array
+        Employee[] staff = {doctor, nurse, pharmacist, technician};
+
+        System.out.println("==================================");
+        System.out.println("     MUKONO HOSPITAL SYSTEM");
+        System.out.println("==================================");
+
+        // Display employee information and responsibilities
+        for (Employee employee : staff) {
+
+            System.out.println("\n----------------------------------");
+
+            employee.displayDetails();
+            employee.performDuties();
+        }
+
+        System.out.println("\n==================================");
+        System.out.println(" ALL STAFF RECORDS DISPLAYED");
+        System.out.println("==================================");
+    }
+}
